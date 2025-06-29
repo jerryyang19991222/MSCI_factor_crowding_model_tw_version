@@ -9,7 +9,14 @@
 
 根據MSCI因子擁擠模型所定義，其最終之五種指標乃為放空未平倉量、成對相關係數、因子波動度、因子長期反轉與估值價差先於時間序列上以滾動視窗到第一筆資料進行標準化。其中成對相關係數、放空未平倉量、因子長期反轉這三類指標於標準化時所用之標準差乃為所有受試因子擁擠度標準差之平均值。
 
->>>>>插入表格<<<<<<
+| 指標名稱       | 標準化方式                  | 標準化參數         | 綜合擷取指標     |
+|----------------|-----------------------------|--------------------|------------------|
+| 估值價差       | rolling expending windows    | own mean<br>own std |                  |
+| 成對相關係數   | rolling expending windows    | own mean<br>global std |              |
+| 放空未平倉量   | rolling expending windows    | own mean<br>global std | 等權重平均合成 |
+| 因子波動度     | rolling expending windows    | own mean<br>own std |                  |
+| 因子長期反轉   | rolling expending windows    | own mean<br>global std |              |
+
 
 用於該次研究之因子如下表，我們將Cmoney日個股屬性評分表中之因子根據主觀分類為10大類因子並且作橫截面上標準化與等權重合成為10個綜合因子作為本研究之標的因子。
 
