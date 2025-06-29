@@ -23,6 +23,6 @@ MSCI 的「綜合因子擁擠模型」（Integrated Factor Crowding Model）旨�
 # 執行 crowding 模型主程式
 python get_crowding_model.py
 
-input_path = /Users/yangzherui/Desktop/py coding/因子研究/data/cmoney_eqlw_twse.pkl
+input_path = 你的檔案路徑
 output_path = /
 factor_return_type = quantile_ls  # 或 ic
