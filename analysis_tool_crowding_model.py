@@ -14,7 +14,7 @@ def corr_analysis(factor_index, integrated_score, future_days):
     import matplotlib.font_manager as fm
 
     # 字體設定
-    font_path = "/Users/yangzherui/Desktop/py coding/因子研究/STHeiti Light.ttc"
+    font_path = "STHeiti Light.ttc"
     font = fm.FontProperties(fname=font_path, size=10)
 
     # 協方差函數（交集填 0）
@@ -88,7 +88,7 @@ def corr_analysis(factor_index, integrated_score, future_days):
 def analysis_crowding_factor(integrated_score,date):
     data = integrated_score.loc[date]
     # 字體設定（本機字體路徑）
-    font_path = "/Users/yangzherui/Desktop/py coding/因子研究/STHeiti Light.ttc"
+    font_path = "STHeiti Light.ttc"
     font_prop = fm.FontProperties(fname=font_path, size=10)
     # 排序後繪圖
     sorted_items = sorted(data.items(), key=lambda x: x[1])
@@ -150,7 +150,7 @@ def mdd_analysis(integrated_score,factor_index):
         'greater_than_1': [compute_dd_exceed_ratio(factor_index, six)],
     })
     # 字體設定（使用本機字體）
-    font_path = "/Users/yangzherui/Desktop/py coding/因子研究/STHeiti Light.ttc"
+    font_path = "STHeiti Light.ttc"
     font_prop = fm.FontProperties(fname=font_path, size=10)
 
     # 資料（從 DataFrame 中取出 row 0）
