@@ -3,8 +3,8 @@ import numpy as np
 from tqdm import tqdm
 import statsmodels.api as sm
 
-input_path = input("請輸入輸入檔案路徑 (.pkl)：") or '/Users/yangzherui/Desktop/py coding/因子研究/data/cmoney_eqlw_twse.pkl'
-output_path = input("請輸入輸出資料夾路徑：") or 'handler/'
+input_path = input("請輸入輸入檔案路徑 (.pkl)：") or 'cmoney_eqlw_twse.pkl'
+output_path = input("請輸入輸出資料夾路徑：") or '/'
 factor_return_type = input("請輸入 factor return 計算方式 (quantile_ls / top_bottom / IC 等)：") or 'quantile_ls'
 
 print("\n✅ 輸入參數如下：")
@@ -12,7 +12,7 @@ print(f"📥 輸入檔案：{input_path}")
 print(f"📤 輸出資料夾：{output_path}")
 print(f"🧠 因子報酬類型：{factor_return_type}")
 
-data=pd.read_csv('/Users/yangzherui/Desktop/py coding/因子研究/data/APIPRCD.csv')###導入業師提供資料
+data=pd.read_csv('APIPRCD.csv')###導入tej股價資料
 data['mdate'] = pd.to_datetime(data['mdate'])###時間資料轉為時間格式
 data.rename(columns= {'coid': 'symbol','mdate': 'datetime'}, inplace=True)###時間與股票代碼對其其她資料名稱
 # 過濾出屬於 TWSE 且 symbol 為 4 碼數字的資料
@@ -21,7 +21,7 @@ TWSE_data = TWSE_data[(TWSE_data['symbol'].astype(int) >= 1101) &(TWSE_data['sym
 TWSE_data=TWSE_data.set_index(['datetime','symbol'])
 
 ####需要探討proxy
-short_data=pd.read_csv('/Users/yangzherui/Desktop/py coding/因子研究/data/日融資券排行.csv')###導入業師提供資料
+short_data=pd.read_csv('日融資券排行.csv')###導入Cmoney資料
 short_data = short_data[short_data['日期'].notna()]
 short_data['日期'] = pd.to_datetime(short_data['日期'].astype(int).astype(str), format='%Y%m%d')
 short_data['股票代號']=short_data['股票代號'].astype(str)
