@@ -10,4 +10,7 @@ MSCI 的「綜合因子擁擠模型」（Integrated Factor Crowding Model）旨�
 - **因子波動度 (Factor Volatility)**  
   因子預期波動度相對於整體市場的比值  
 - **因子反轉趨勢 (Factor Reversal)**  
-  以過去 36 個月累積報酬衡量長期反轉訊號 
+  以過去 36 個月累積報酬衡量長期反轉訊號
+
+### 📊 Key Insight
+
