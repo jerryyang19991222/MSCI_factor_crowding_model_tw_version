@@ -5,11 +5,11 @@ MSCI 的「綜合因子擁擠模型」（Integrated Factor Crowding Model）旨�
   測量因子高曝險與低曝險標的之估值差距  
 - **放空利率差 (Short Interest Spread)**  
   衡量不同曝險群組間的平均放空比率差異  
-- **組內相關性 (Pairwise Correlation)**  
+- **成對相關性 (Pairwise Correlation)**  
   因子頂/底部五分位標的之間的超額報酬相關性  
 - **因子波動度 (Factor Volatility)**  
   因子預期波動度相對於整體市場的比值  
-- **因子反轉趨勢 (Factor Reversal)**  
+- **因子長期反轉 (Factor Reversal)**  
   以過去 36 個月累積報酬衡量長期反轉訊號
 
 ### 📊 Key Insight
